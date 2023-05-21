@@ -9,8 +9,6 @@ body {
 
 .container {
   position: relative;
-  width: fit-content;
-  margin: 0 auto;
 }
 
 #centered-image {
