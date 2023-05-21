@@ -1,5 +1,6 @@
 window.onload = function () {
   var image = document.getElementById("centered-image");
+  image.classList.add("animate");
 
   function animateImage() {
     image.style.transform = "scale(1.5)";
