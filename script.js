@@ -10,12 +10,12 @@ window.onload = function () {
     image.style.pointerEvents = "none"; // Removes image entirely
 
     buttons.forEach(function (button) {
-      button.style.opacity = "1"; // Fade in the buttons
+      button.style.opacity = "1"; // Fade-in for buttons
     });
 
     setTimeout(function () {
-      textContainer.style.opacity = "1"; // Fade in the text container
-    }, 500); // Adjust the delay for the text container fade-in
+      textContainer.style.opacity = "1"; // Fade-in for text-container
+    }, 500); // Fade-in delay
   }, 1000);
 };
 
