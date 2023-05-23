@@ -1,13 +1,15 @@
 window.onload = function () {
   var image = document.getElementById("centered-image");
+  var textContainer = document.getElementById("text-container");
   var buttons = document.querySelectorAll(".button");
 
   setTimeout(function () {
     image.style.opacity = "0"; // Disappears the image
     image.style.pointerEvents = "none"; // Removes image entirely
     buttons.forEach(function (button) {
-      button.classList.add("fade-in");
+      button.classList.add("fade-in"); // Reveals Buttons
     });
+    textContainer.style.opacity = "1"; // Reveals Text
   }, 1000);
 };
 
