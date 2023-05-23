@@ -3,13 +3,19 @@ window.onload = function () {
   var textContainer = document.getElementById("text-container");
   var buttons = document.querySelectorAll(".button");
 
+  image.style.opacity = "0"; // Start with transparent image
+  textContainer.style.opacity = "0"; // Start with transparent text
+
   setTimeout(function () {
-    image.style.opacity = "0"; // Disappears the image
     image.style.pointerEvents = "none"; // Removes image entirely
+
     buttons.forEach(function (button) {
-      button.classList.add("fade-in"); // Reveals Buttons
+      button.style.opacity = "1"; // Fade in the buttons
     });
-    textContainer.style.opacity = "1"; // Reveals Text
+
+    setTimeout(function () {
+      textContainer.style.opacity = "1"; // Fade in the text container
+    }, 500); // Adjust the delay for the text container fade-in
   }, 1000);
 };
 
