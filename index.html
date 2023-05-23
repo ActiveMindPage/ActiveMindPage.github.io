@@ -7,15 +7,26 @@
     <title>Active Mind Page</title>
   </head>
   <body>
+    <div class="text-container">
+      <span class="text-line">ACTIVE</span>
+      <span class="text-line">MIND</span>
+      <span class="text-line">.</span>
+      <span class="text-line">PAGE</span>
+    </div>
     <div class="container">
       <img id="centered-image" src="img\brain.png" alt="Brain Centered" />
       <div class="buttons">
-        <button class="button">Button 1</button>
-        <button class="button">Button 2</button>
-        <button class="button">Button 3</button>
-        <button class="button">Button 4</button>
-        <button class="button">Button 5</button>
-        <button class="button">Button 6</button>
+        <button
+          class="button"
+          onclick="window.location.href='https://www.google.com'"
+        >
+          Button 1
+        </button>
+        <button class="button" onclick="handleButtonClick(2)">Button 2</button>
+        <button class="button" onclick="handleButtonClick(3)">Button 3</button>
+        <button class="button" onclick="handleButtonClick(4)">Button 4</button>
+        <button class="button" onclick="handleButtonClick(5)">Button 5</button>
+        <button class="button" onclick="handleButtonClick(6)">Button 6</button>
       </div>
     </div>
     <script src="script.js"></script>

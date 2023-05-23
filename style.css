@@ -70,3 +70,15 @@ body {
 .button:nth-child(6) {
   background-color: #6fa21b;
 }
+
+.text-container {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.text-line {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
